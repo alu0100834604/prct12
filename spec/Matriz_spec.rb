@@ -1,5 +1,5 @@
-require "Practica9/Matriz.rb"
-require "Practica9/Fraccion.rb"
+require "Practica12/Matriz.rb"
+require "Practica12/Fraccion.rb"
 
 describe Matriz do
  before :each do

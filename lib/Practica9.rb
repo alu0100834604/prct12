@@ -1,6 +1,6 @@
-require "Practica9/version"
+require "Practica12/version"
 #Archivo del módulo
 
-module Practica9
+module Practica12
   # Your code goes here...
 end

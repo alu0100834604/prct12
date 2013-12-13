@@ -11,6 +11,7 @@ task :default => :spec
 desc "Run rspec with format: html"
 task :thtml do
   sh "rspec -Ilib spec/Matriz_spec.rb --format html > index.html"
+  sh "rspec -Ilib spec/MatrizDSL_spec.rb --format html > index2.html"
 end
 
 Rake::TestTask.new do |t|

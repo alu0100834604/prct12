@@ -1,6 +1,6 @@
 require "test/unit"
-require "Practica9/Matriz.rb"
-require "Practica9/Fraccion.rb"
+require "Practica12/Matriz.rb"
+require "Practica12/Fraccion.rb"
 #Test sobre la clase Matriz , MatrizDensa y MatrizDispersa
 
 class Test_Matriz < Test::Unit::TestCase

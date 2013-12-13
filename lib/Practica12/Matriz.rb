@@ -1,4 +1,4 @@
-require "Practica9/Fraccion.rb"
+require "Practica12/Fraccion.rb"
 #Clase madre, implementa las operaciones comunes suma y resta, acceso y modificación
 #de elementos.  
 class Matriz

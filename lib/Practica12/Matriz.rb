@@ -13,9 +13,22 @@ def initialize( valor_entrada)
 
    	@filas.times{ |i|
        		@columnas.times{ |j|
-          		matriz[i][j] = valor_entrada[i][j]
+          		@matriz[i][j] = valor_entrada[i][j]
        		}
    	}
+end
+
+def to_s
+	txt_total = ""
+        @filas.times{ |i|
+		txt = "["
+                @columnas.times{ |j|
+                        txt = txt + @matriz[i][j].to_s + " "
+                }
+		txt = txt + "]"
+		txt_total = txt_total + txt + "\n"
+        }
+	txt_total
 end
 
 

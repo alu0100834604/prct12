@@ -6,7 +6,7 @@ describe MatrizDSL do
  before :each do
 	@ejemplo = MatrizDSL.new("suma") do 
 		option "densa" 
-		option "console"
+                option "file"
 
 		operand [[1,2,3],[4,5,6],[7,8,9]]
 		operand [[1,1,1],[1,1,1],[1,1,1]]
@@ -14,7 +14,7 @@ describe MatrizDSL do
 
         @ejemplo2 = MatrizDSL.new("suma") do
                 option "densa"
-                option "console"
+		option "console"
 
                 operand [[3,4],[5,6]]
                 option "dispersa"

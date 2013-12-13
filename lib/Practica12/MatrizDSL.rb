@@ -4,7 +4,16 @@ class MatrizDSL
 	def initialize(valor, &block)
 		@operandos = []
 		@operacion = valor;
+		
 		instance_eval &block
+		
+		if(@salida == "consola") 
+			puts @resultado.to_s 
+		elsif(@salida == "fichero") 
+			File.open('pruebas.txt','a+') do |x|
+				x.puts @resultado.to_s 
+			end 
+		end
 	end
 
 	def option(opcion)
@@ -14,6 +23,8 @@ class MatrizDSL
 			@tipo_operandos = MatrizDispersa
 		elsif opcion=="console"
 			@salida = "consola"
+		elsif opcion=="file"
+			@salida = "fichero"
 		end
 	end
 

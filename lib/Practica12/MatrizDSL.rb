@@ -10,7 +10,7 @@ class MatrizDSL
 		if(@salida == "consola") 
 			puts @resultado.to_s 
 		elsif(@salida == "fichero") 
-			File.open('pruebas.txt','a+') do |x|
+			File.open('pruebas.txt','w') do |x|
 				x.puts @resultado.to_s 
 			end 
 		end
